@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
+    title EmployeeTest
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = stylesheet_link_tag    "https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"
+    = javascript_include_tag "https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"
+    = csrf_meta_tags
+  body.container
+    = yield

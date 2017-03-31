@@ -1,0 +1,5 @@
+= form_tag import_products_path, multipart: true do
+  .field
+    = label_tag "Upload CSV"
+    = file_field_tag :file
+  .actions = submit_tag "Import"
